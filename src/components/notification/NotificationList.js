@@ -5,7 +5,7 @@ import { Grid, Avatar, Typography } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import FollowButton from "../shared/FollowButton";
 import useOutsideClick from "@rooks/use-outside-click";
-import { useMutation } from "@apollo/react-hooks";
+import { useMutation } from "@apollo/client";
 import { CHECK_NOTIFICATIONS } from "../../graphql/mutations";
 import { formatDateToNowShort } from "../../utils/formatDate";
 

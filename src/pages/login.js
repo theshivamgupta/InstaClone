@@ -15,7 +15,7 @@ import FacebookIconBlue from "../images/facebook-icon-blue.svg";
 import FacebookIconWhite from "../images/facebook-icon-white.png";
 import { AuthContext } from "../auth";
 import isEmail from "validator/lib/isEmail";
-import { useApolloClient } from "@apollo/react-hooks";
+import { useApolloClient } from "@apollo/client";
 import { GET_USER_EMAIL } from "../graphql/queries";
 import { AuthError } from "./signup";
 

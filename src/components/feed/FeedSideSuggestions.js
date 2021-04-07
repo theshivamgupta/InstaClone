@@ -5,7 +5,7 @@ import { Paper, Typography } from "@material-ui/core";
 import UserCard from "../shared/UserCard";
 import FollowButton from "../shared/FollowButton";
 import { LoadingIcon } from "../../icons";
-import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from "@apollo/client";
 import { SUGGEST_USERS } from "../../graphql/queries";
 import { UserContext } from "../../App";
 

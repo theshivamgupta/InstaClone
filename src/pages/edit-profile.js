@@ -18,7 +18,7 @@ import { Menu } from "@material-ui/icons";
 // import { defaultCurrentUser } from "../data";
 import ProfilePicture from "../components/shared/ProfilePicture";
 import { UserContext } from "../App";
-import { useQuery, useMutation } from "@apollo/react-hooks";
+import { useQuery, useMutation } from "@apollo/client";
 import { GET_EDIT_USER_PROFILE } from "../graphql/queries";
 import LoadingScreen from "../components/shared/LoadingScreen";
 import { useForm } from "react-hook-form";

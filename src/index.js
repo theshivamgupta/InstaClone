@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { ApolloProvider } from "@apollo/react-hooks";
+import { ApolloProvider } from "@apollo/client";
 import { MuiThemeProvider, CssBaseline, Typography } from "@material-ui/core";
 import { BrowserRouter as Router } from "react-router-dom";
 import theme from "./theme";

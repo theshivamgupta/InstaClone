@@ -18,7 +18,7 @@ import { ArrowBackIos, PinDrop } from "@material-ui/icons";
 import { UserContext } from "../../App";
 import serialize from "../../utils/serialize";
 import handleImageUpload from "../../utils/handleImageUpload";
-import { useMutation } from "@apollo/react-hooks";
+import { useMutation } from "@apollo/client";
 import { CREATE_POST } from "../../graphql/mutations";
 
 const initialValue = [

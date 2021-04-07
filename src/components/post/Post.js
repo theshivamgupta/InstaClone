@@ -22,7 +22,7 @@ import {
 import OptionsDialog from "../shared/OptionsDialog";
 // import { defaultPost } from "../../data";
 import PostSkeleton from "./PostSkeleton";
-import { useSubscription, useMutation } from "@apollo/react-hooks";
+import { useSubscription, useMutation } from "@apollo/client";
 import { GET_POST } from "../../graphql/subscriptions";
 import { UserContext } from "../../App";
 import {

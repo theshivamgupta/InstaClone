@@ -1,4 +1,4 @@
-import { gql } from "apollo-boost";
+import { gql } from "@apollo/client";
 
 export const ME = gql`
   subscription me($userId: String) {
@@ -16,7 +16,7 @@ export const ME = gql`
           user_id
         }
       }
-      following {
+      followings {
         user {
           id
           user_id

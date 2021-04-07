@@ -3,7 +3,7 @@ import { useFollowButtonStyles } from "../../styles";
 import { Button } from "@material-ui/core";
 import { UserContext } from "../../App";
 import { FOLLOW_USER, UNFOLLOW_USER } from "../../graphql/mutations";
-import { useMutation } from "@apollo/react-hooks";
+import { useMutation } from "@apollo/client";
 
 function FollowButton({ side, id }) {
   const classes = useFollowButtonStyles({ side });

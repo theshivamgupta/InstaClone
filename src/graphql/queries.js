@@ -1,4 +1,4 @@
-import { gql } from "apollo-boost";
+import { gql } from "@apollo/client";
 import { userFields, gridPostFields } from "./fragments";
 
 export const CHECK_IF_USERNAME_TAKEN = gql`

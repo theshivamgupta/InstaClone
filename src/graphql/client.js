@@ -1,6 +1,5 @@
-import ApolloClient from "apollo-client";
-import { WebSocketLink } from "apollo-link-ws";
-import { InMemoryCache } from "apollo-cache-inmemory";
+import { ApolloClient, InMemoryCache } from "@apollo/client";
+import { WebSocketLink } from "@apollo/client/link/ws";
 
 const headers = { "x-hasura-admin-secret": "wizardking" };
 
@@ -9,6 +8,8 @@ const client = new ApolloClient({
     uri: "wss://forum-competitive.herokuapp.com/v1/graphql",
     options: {
       reconnect: true,
+      lazy: true,
+      timeout: 3000,
       connectionParams: {
         headers,
       },

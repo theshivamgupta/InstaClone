@@ -10,7 +10,7 @@ import LoadingScreen from "../components/shared/LoadingScreen";
 import { LoadingLargeIcon } from "../icons";
 import FeedPostSkeleton from "../components/feed/FeedPostSkeleton";
 import { UserContext } from "../App";
-import { useQuery } from "@apollo/react-hooks";
+import { useQuery } from "@apollo/client";
 import { GET_FEED } from "../graphql/queries";
 import usePageBottom from "../utils/usePageBottom";
 const FeedPost = React.lazy(() => import("../components/feed/FeedPost"));

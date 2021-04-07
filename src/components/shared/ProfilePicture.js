@@ -1,7 +1,7 @@
 import React from "react";
 import { useProfilePictureStyles } from "../../styles";
 import { Person } from "@material-ui/icons";
-import { useMutation } from "@apollo/react-hooks";
+import { useMutation } from "@apollo/client";
 import handleImageUpload from "../../utils/handleImageUpload";
 import { EDIT_USER_AVATAR } from "../../graphql/mutations";
 import { UserContext } from "../../App";

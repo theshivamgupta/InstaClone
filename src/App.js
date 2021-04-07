@@ -16,7 +16,7 @@ import SignUpPage from "./pages/signup";
 import NotFoundPage from "./pages/not-found";
 import PostModal from "./components/post/PostModal";
 import { AuthContext } from "./auth";
-import { useSubscription } from "@apollo/react-hooks";
+import { useSubscription } from "@apollo/client";
 import { ME } from "./graphql/subscriptions";
 import LoadingScreen from "./components/shared/LoadingScreen";
 
@@ -53,9 +53,9 @@ function App() {
 
   const isModalOpen = modal && prevLocation.current !== location;
   const me = isAuth && data ? data.users[0] : null;
-  const currentUserId = me.id;
-  const followingIds = me.following.map(({ user }) => user.id);
-  const followerIds = me.followers.map(({ user }) => user.id);
+  const currentUserId = me?.id;
+  const followingIds = me?.followings?.map(({ user }) => user.id);
+  const followerIds = me?.followers?.map(({ user }) => user.id);
   const feedIds = [...followingIds, currentUserId];
 
   return (

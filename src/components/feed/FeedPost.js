@@ -31,7 +31,7 @@ import {
   CREATE_COMMENT,
 } from "../../graphql/mutations";
 import { GET_FEED } from "../../graphql/queries";
-import { useMutation } from "@apollo/react-hooks";
+import { useMutation } from "@apollo/client";
 import { UserContext } from "../../App";
 
 function FeedPost({ post, index }) {
