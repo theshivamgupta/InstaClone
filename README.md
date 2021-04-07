@@ -1,6 +1,6 @@
 # Instgram Clone
 
-[Link](insta-clone-ecru.vercel.app)
+[Link](https://insta-clone-ecru.vercel.app/accounts/login)
 
 ## Routes (Pages)
 
